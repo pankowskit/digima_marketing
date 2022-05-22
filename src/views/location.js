@@ -1,11 +1,17 @@
-import {Container} from "react-bootstrap";
+import React,{Component} from "react";
+import Container from "../../node_modules/react-bootstrap/Container";
+import LocationS1 from "../components/location-s1";
+import LocationS2 from "../components/location-s2";
 
-function Location(){
-    return(
-        <Container fluid className="minh-footer-adj bg-dark d-flex align-items-center py-5">
-            
-        </Container>
-    );
+class Location extends Component{
+    render(){
+        return(        
+            <Container fluid className="minh-footer-adj p-0">
+                <LocationS1/>
+                <LocationS2/>
+            </Container>    
+        );
+    }
 }
 
 export default Location;
